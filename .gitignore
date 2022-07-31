@@ -1,0 +1,5 @@
+Release/
+.vs/
+*.user
+cmake-build-release
+.idea
