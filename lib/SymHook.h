@@ -41,4 +41,11 @@ namespace SymHook{
     // [����] ?getNameTag@Actor@@UEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
     constexpr RVA MSSYM_B1QE10getNameTagB1AA5ActorB2AAA8UEBAAEBVB2QDA5basicB1UA6stringB1AA2DUB2QDA4charB1UA6traitsB1AA1DB1AA3stdB2AAA1VB2QDA9allocatorB1AA1DB1AA12B2AAA3stdB2AAA2XZ = 0x00562BC0;
 
+    // [原型] public: __cdecl PropertiesSettings::PropertiesSettings(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const & __ptr64) __ptr64
+    // [符号] ??0PropertiesSettings@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+    constexpr RVA MSSYM_MD5_a398f6a5fd39181326a27812ad91ddbb = 0x000B7180;
+
+    // [原型] public: static unsigned int __cdecl LevelSettings::parseSeedString(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const & __ptr64,unsigned int)
+    // [符号] ?parseSeedString@LevelSettings@@SAIAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z
+    constexpr RVA MSSYM_MD5_d2496e689e9641a96868df357e31ad87 = 0x00B1CA30;
 }

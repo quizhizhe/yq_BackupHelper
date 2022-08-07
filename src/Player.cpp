@@ -20,8 +20,11 @@ std::string Player::getNameTag() {
     );
 }
 
-enum CommandPermissionLevel Player::getCommandPermissionLevel() {
-    return *reinterpret_cast<CommandPermissionLevel *>(this+2112);
+CommandPermissionLevel Player::getCommandPermissionLevel() {
+    return SYM_CALL(CommandPermissionLevel (*)(Player*),
+                    SymHook::MSSYM_B1QE25getCommandPermissionLevelB1AA6PlayerB2AAA4UEBAB1QE25AW4CommandPermissionLevelB2AAA2XZ,
+                    this
+    );
 }
 
 NetworkIdentifier *Player::getClientID() {

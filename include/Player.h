@@ -11,20 +11,29 @@
 struct NetworkIdentifier {
     uint64_t getHash();
 };
-enum CommandPermissionLevel : char {
-    Any = 0,
-    GameMasters = 1,
-    Admin = 2,
-    HostPlayer = 3,
-    Console = 4,
-    Internal = 5,
+//enum CommandPermissionLevel : char {
+//    Any = 0,
+//    GameMasters = 1,
+//    Admin = 2,
+//    HostPlayer = 3,
+//    Console = 4,
+//    Internal = 5,
+//};
+
+enum CommandPermissionLevel:char {
+    Any = 0x0,
+    GameMasters = 0x1,
+    Admin = 0x2,
+    Host = 0x3,
+    Owner = 0x4,
+    Internal = 0x5,
 };
 
 class Player {
 public:
     std::string getNameTag();
     NetworkIdentifier *getClientID();
-    enum CommandPermissionLevel getCommandPermissionLevel();
+    CommandPermissionLevel getCommandPermissionLevel();
 
 };
 
