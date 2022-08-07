@@ -15,7 +15,7 @@ set(CMAKE_BUILD_TYPE release)
 
 ####################这里是具体功能##########################
 #设置插版本
-set(BACKUPHELPER_VERSION 0.1)
+set(BACKUPHELPER_VERSION 0.2)
 #设置游戏版本
 set(MCBE_VERSION 1.16.40.2)
 #是否是测试版

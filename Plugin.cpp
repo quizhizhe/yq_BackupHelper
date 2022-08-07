@@ -105,8 +105,9 @@ void entry()
     
 	Message::logger("BackupHelper存档备份助手-已装载  当前版本：%s", ver.c_str());
     Message::logger("OP/后台命令： {backup} 开始备份");
-    Message::logger("使用 {back list} 和 {back 存档序号} 指令回档");
-    Message::logger("使用{backCancel}指令可以取消回档");
+    Message::logger("使用 {back list} 列出存在的存档");
+    Message::logger("使用 {back 存档序号} 指令回档");
+    Message::logger("使用回档指令后，重启前，使用{backCancel}指令可以取消回档");
     //Message::logger("OP/后台命令： backup reload 重新加载配置文件");
 
     //Cleanup Old
