@@ -39,6 +39,7 @@ add_library(${MOD_NAME}
         src/Command.cpp
         src/Message.cpp
         src/Player.cpp
+        src/ScheduleAPI.cpp
         Plugin.cpp
         )
 
